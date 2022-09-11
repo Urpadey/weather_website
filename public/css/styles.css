@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+body{
+  color:#333333;
+  font-family: Arial;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: 'header'
+                        'main'
+                        'footer';
+ grid-template-rows: 200px 1fr 86px;
+
+}
+h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+main{
+    grid-area: main;
+}
+main input{
+    padding: 5px;
+    outline: none;
+    border: 1px solid #cccccc;
+    text-transform: capitalize;
+}
+main button[type=submit]{
+    all:unset;
+    padding: 6px;
+    color:#cccccc;
+    background-color: white;
+    border:1px solid ;
+    border-radius: 10px;
+    margin-left: 4px;
+
+}
+main button[type=submit]:hover{
+    color: white;
+    background-color:#cccccc;
+    cursor: pointer;
+
+}
+footer{
+    color: #888888;
+    margin-top:16px;
+    border-top: 1px solid #eeeeee;
+    padding: 12px 0;
+    position: relative;
+    bottom: 0;
+    grid-area: footer;
+
+}
+header{
+    margin: 16px 0 48px 0;
+    grid-area: header;
+
+}
+header h1{
+    text-transform:capitalize;
+}
+header a{
+    text-decoration: none;
+    color:#888888;
+    margin-right: 16px;
+}
+.portait{
+    width: 250px;
+}
+p{
+    width: 300px;
+    color:#201f1f;
+    font-variant: small-caps;
+
+}
